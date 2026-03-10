@@ -1,101 +1,151 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Wedding celebration events with booking information">
-  <meta name="author" content="Stephanie Ramos">
-  <title>Event Center Website</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Wedding celebration events with booking information"
+    />
+    <meta name="author" content="Stephanie Ramos" />
+    <title>Event Center Website</title>
+    <link
+      rel="icon"
+      type="image/svg"
+      href="/AssignmentEventCenter/img/breakers_logo_b.svg"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
-  <header>
+  <body>
+    <!-- Requirement: <header> tag -->
+    <header>
       <a href="index.html" class="logo">The Breakers</a>
+      <!-- Requirement: <nav> tag -->
       <nav class="navbar">
+        <!-- Requirment: Unordered and Ordered List -->
         <ul>
+          <!-- Requirement: 3 Pages and Links all pages and Internal Links -->
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="events.html">Event Showcase</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="schedule.html">Schedule</a></li>
         </ul>
       </nav>
-  </header>
+    </header>
 
-  <main>
-    <section class="hero">
-      <div class="container">
-        <h1>Where Celebrations Become Stories</h1>
-        <p>From weddings to conferences, Grand Hall delivers elegant spaces, expert planning, and unforgettable experiences.</p>
-        <a class="button" href="events.html">Explore Upcoming Events</a>
-      </div>
-    </section>
+    <!-- Requirement: <main> tag -->
+    <main>
+      <!-- Requirement: Introduction to Events/Banner Section -->
+      <section class="banner">
+        <!-- Requirement: Headings -->
+        <h1>Where Wedding Celebrations Become Stories</h1>
+        <!-- Requirement: Paragraphs -->
+        <p>
+          The Breakers delivers elegant spaces, expert planning, and
+          unforgettable experiences.
+        </p>
+        <a class="button" href="schedule.html">Check Availability</a>
+      </section>
 
-    <section class="container">
-      <h2>Featured Highlights</h2>
-      <div class="card-grid">
-        <article class="event-card">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/6/65/Wedding_Reception_2018.jpg" alt="Wedding reception dinner setup in a ballroom">
-          <h3>Elegant Wedding Weekend</h3>
-          <p>A two-day celebration package with catering, floral partners, and dance-floor lighting.</p>
-        </article>
-        <article class="event-card">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Meeting_room_icon.png" alt="Icon representing a business meeting and conference room">
-          <h3>Business Leadership Summit</h3>
-          <p>Full AV support, breakout rooms, and corporate dining options for modern conference teams.</p>
-        </article>
-        <article class="event-card">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/2/2c/Rotating_earth_%28large%29.gif" alt="Animated globe image representing international cultural events">
-          <h3>Global Culture Festival</h3>
-          <p>Food, music, and performances from around the world in our indoor and outdoor event spaces.</p>
-        </article>
-      </div>
-    </section>
+      <!-- Requirement: Featured Event Showcase Banner -->
+      <section class="eventShowcaseBanner">
+        <div class="eventBanner">
+          <h2>Event Showcase</h2>
+          <img
+            class="imagebox"
+            src="/AssignmentEventCenter/img/es_weddings_04.jpg"
+            alt="A Wedding Venue"
+          />
+          <br>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum
+            harum expedita ut. Sapiente eius fugiat eligendi at quo quae sed in,
+            molestias nisi perspiciatis odit inventore ratione, eum voluptates
+            enim repudiandae facilis quam. Vero!
+          </p>
+        </div>
+      </section>
 
-    <section class="container">
-      <h2>Why Guests Choose Grand Hall</h2>
-      <p>We combine venue design, hospitality, and event logistics to support hosts from planning to final send-off.</p>
-      <ul>
-        <li>Flexible indoor and outdoor venues</li>
-        <li>On-site event coordination team</li>
-        <li>Custom catering and vendor partnerships</li>
-      </ul>
-      <h3>Booking Process</h3>
-      <ol>
-        <li>Choose your event date and venue layout.</li>
-        <li>Meet with our planning team to customize your package.</li>
-        <li>Confirm guest details and event timeline.</li>
-      </ol>
-      <p>Read more in our <a href="about.html">venue story</a> or visit our partner, <a href="https://www.eventbrite.com/" target="_blank" rel="noopener noreferrer">Eventbrite</a>, for ticketing inspiration.</p>
-    </section>
+        <!-- Event Showcase -->
+      <section class="card-grid">
+        <!-- Requirement: <artcile> tag -->
+          <article class="event-card">
+            <!-- Requirement: jpg image with alt text -->
+            <img
+              src="https://storage.googleapis.com/wwwstatic.thebreakers.com/filer_public_thumbnails/filer_public/9e/72/9e72fed8-1506-4f79-9fde-ae0626433b2e/01_oceanlawn_alain_martinez.jpg__1024x1024_q85_subsampling-2.jpg"
+              alt="Wedding reception dinner setup in a ballroom"
+            />
+            <h3>Ocean Lawn</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam
+              facilis debitis tenetur? Eius dicta incidunt, ea numquam
+              accusantium quia ipsam.
+            </p>
+          </article>
+          <article class="event-card">
+            <!-- Requirement: png image with alt text -->
+            <img
+              src="/AssignmentEventCenter/img/theCircleBallroom.png"
+              alt="The Circle Ballroom"
+            />
+            <h3>The Circle Ballroom</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab minima
+              earum molestiae quia ratione obcaecati aliquam laudantium sunt a
+              eveniet.
+            </p>
+          </article>
+          <article class="event-card">
+            <!-- Requirement: gif image with alt text -->
+            <img
+              src="/AssignmentEventCenter/img/magnoliaRoom.gif"
+              alt="The Circle Ballroom"
+            />
+            <h3>Magnolia Room</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab minima
+              earum molestiae quia ratione obcaecati aliquam laudantium sunt a
+              eveniet.
+            </p>
+          </article>
+          <article class="event-card">
+            <!-- Requirement: External Link -->
+            <img
+              src="https://storage.googleapis.com/wwwstatic.thebreakers.com/filer_public_thumbnails/filer_public/59/d5/59d55fa1-8884-4633-98ae-4e3a63d5b0bc/front_lawn_jonathan_connolly_01.png__1024x1024_q85_subsampling-2.jpg"
+              alt="Forest Lawn"
+            />
+            <h3>Front Lawn</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga
+              modi possimus quasi? Omnis, soluta quaerat nihil quas neque
+              laudantium voluptatibus.
+            </p>
+          </article>
+        </div>
+      </section>
 
-    <section id="contact" class="container">
-      <h2>Contact & Booking Inquiry</h2>
-      <form class="contact-form" action="#" method="post">
-        <label for="name">Full Name</label>
-        <input id="name" name="name" type="text" required>
+      <section class="why">
+        <h2>Why Guests Choose The Breakers</h2>
+        <p>
+          We combine venue design, hospitality, and event logistics to support
+          hosts from planning to final send-off.
+        </p>
+          <ul class="list">
+            <li>Flexible indoor and outdoor venues</li>
+            <li>On-site event coordination team</li>
+            <li>Custom catering and vendor partnerships</li>
+          </ul>
+      </section>
 
-        <label for="email">Email Address</label>
-        <input id="email" name="email" type="email" required>
-
-        <label for="message">Event Details</label>
-        <textarea id="message" name="message" rows="6" placeholder="Tell us your preferred date, guest count, and event type."></textarea>
-
-        <button type="submit">Submit Inquiry</button>
-      </form>
-      <p><a href="#top">Back to top</a></p>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-wrap">
-      <p>&copy; 2026 Grand Hall Event Center</p>
-      <ul class="social-links">
-        <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-        <li><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a></li>
-        <li><a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">YouTube</a></li>
-      </ul>
-    </div>
-  </footer>
-</body>
+      <!-- Bonus: Back to Top -->
+      <section>
+         <p><a href="#top">Back to top</a></p>
+      </section>
+    </main>
+    <!-- Requirement: <footer> tag -->
+    <footer>
+      <p>&copy; 2026 The Breakers</p>
+      <!--Copyright Information-->
+    </footer>
+  </body>
 </html>

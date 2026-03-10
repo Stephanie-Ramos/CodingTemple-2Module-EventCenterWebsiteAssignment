@@ -1,97 +1,97 @@
-:root { /* What is this? */
-  --bg-color: #f9f6f1;
-  --surface-color: #ffffff;
-  --primary-color: #134074;
-  --accent-color: #e67e22;
-  --text-color: #1f2933;
-  --muted-text: #4b5563;
-  --border-color: #d8dee9;
-}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding:0;
+  font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: "Trebuchet MS", Verdana, sans-serif;
-  color: var(--text-color);
+  margin-top: 4rem;
   line-height: 1.6;
-  background:
-    radial-gradient(circle at 20% 20%, rgba(230, 126, 34, 0.12), transparent 40%),
-    linear-gradient(160deg, #fdfbf8 0%, var(--bg-color) 55%, #eef4f9 100%);
-}
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  height:100%
 
-.container {
-  width: min(1100px, 92%);
-  margin: 0 auto;
 }
 
 /* Header Section */
 header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-decoration: none;
+  list-style: none;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 1;
+  width: 100%;
   background-color: #FEFFFE;
-  padding: .8rem;
+  padding: .6rem;
 }
 
 .logo {
   font-size: 2rem;
   font-weight: 1000;
   text-decoration: none;
-  color:#8D818C;
-  border: 2px solid red;
+  color: #124559;
 }
 
 .navbar {
-  list-style: none;
-  gap: 1rem;
-  border: 2px solid red;
-
-}
-
-.navbar ul {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-.navbar li {
-    display: flex;
-    list-style: none;
-    margin-left: 30px;
-}
-
-.navbar li a {
+  display: flex;
+  position:relative;
+  flex-direction: column;
+  justify-content: space-between;
   text-decoration: none;
-  color: #B4B8C5;
+  list-style: none;
+}
+
+ul {
+    display: inline-block;
+    flex-direction: column;
+    justify-content: space-between;
+    text-decoration: none;
+    list-style-type: none;
+    text-align: right;
+}
+
+li {
+  display: inline-block;
+  margin-inline: 16px;
+}
+
+li a {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  list-style: none;
+  text-decoration: none;
+  color: #AEC3B0;
   font-weight: 600;
   font-size: 1.5rem;
   transition:.05s;
 }
 
-.nav-list a:hover,
-.nav-list a:focus {
-  background-color: var(--primary-color);
-  color: #fff;
-  transform: translateY(-1px);
-}
-
-[aria-current="page"] {
-  color: var(--accent-color);
+.navbar a:hover,
+.navbar a:focus {
+  color: #EFF6E0;
 }
 
 /* Main Section */
 main section {
-  padding: 3rem 0;
+  padding: 4rem;
 }
 
-.hero,
-.page-banner {
+/* Banner */
+.banner {
+  margin-top:4rem;
+}
+
+.banner {
   color: #fff;
   background-image:
     linear-gradient(rgba(19, 64, 116, 0.86), rgba(19, 64, 116, 0.86)),
@@ -100,20 +100,8 @@ main section {
   background-size: cover;
 }
 
-.hero h1,
-.page-banner h1 {
-  margin: 0 0 0.8rem;
-  font-size: clamp(1.8rem, 3vw, 2.6rem);
-}
 
-.hero p,
-.page-banner p {
-  max-width: 700px;
-  margin: 0 0 1.4rem;
-}
-
-.button,
-button {
+.button {
   display: inline-block;
   border: none;
   border-radius: 8px;
@@ -121,19 +109,48 @@ button {
   font-weight: 700;
   cursor: pointer;
   text-decoration: none;
-  background-color: var(--accent-color);
+  background-color: #8ab0dd;
   color: #fff;
   transition: transform 0.25s ease, background-color 0.25s ease;
 }
+
 
 .button:hover,
 button:hover,
 .button:focus,
 button:focus {
-  background-color: #c85f05;
+  background-color: red;
   transform: scale(1.03);
 }
 
+/* Index: Event Showcase Banner */
+.eventShowcaseBanner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.eventBanner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.eventBanner h2{
+    color: black;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.eventBanner img { 
+    width: 600px;
+    height:auto;
+}
+
+/* Index: Event Showcase */
 .card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
@@ -141,18 +158,15 @@ button:focus {
 }
 
 .event-card {
-  background-color: var(--surface-color);
-  border: 1px solid var(--border-color);
+  background-color: #fff;
+  border: 1px solid black;
   border-radius: 12px;
   padding: 1rem;
   box-shadow: 0 10px 20px rgba(31, 41, 51, 0.08);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-  animation: fadeUp 0.5s ease both;
 }
 
 .event-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 26px rgba(31, 41, 51, 0.14);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .event-card img {
@@ -160,8 +174,32 @@ button:focus {
   height: 170px;
   object-fit: cover;
   border-radius: 8px;
-  border: 1px solid var(--border-color);
+  border: 1px solid black;
 }
+
+/* Index: Why Section */
+/* ? Left Indent the List */
+.why {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.list li {
+  text-align: left;
+
+}
+
+
+
+
+
+
+
+
+
+
 
 .two-column {
   display: grid;
@@ -245,62 +283,31 @@ th {
   border-top: 4px solid var(--accent-color);
 }
 
-.site-footer {
-  margin-top: 2rem;
-  background-color: #12263d;
-  color: #fff;
-}
-
-.footer-wrap {
+/* Footer Section */
+/* ? How to fix the footer at the bottom when resizing it */
+footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   gap: 1rem;
   padding: 1.2rem 0;
-}
-
-.social-links {
-  list-style: none;
-  display: flex;
-  gap: 0.8rem;
-  margin: 0;
-  padding: 0;
-}
-
-.social-links a {
+  margin-top: 2rem;
+  background-color: #01161E;
   color: #fff;
-  text-decoration: none;
 }
 
-.social-links a:hover,
-.social-links a:focus {
-  color: #ffd8b0;
+/* Media Queries */
+/* Tablet Device */
+@media screen and (max-width: 768px) {
+  .project-grid {
+    background-color: rgba(126, 192, 126, 0.562);
+  }
+
 }
 
-@keyframes fadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(14px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@media (max-width: 760px) {
-  .nav-wrap {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .nav-list {
-    flex-wrap: wrap;
-  }
-
-  .two-column,
-  .footer-wrap {
-    grid-template-columns: 1fr;
-    display: grid;
+/* Mobile Device */
+@media screen and (max-width: 576px) {
+  .project-grid {
+    background-color: rgb(166, 194, 222);
   }
 }
