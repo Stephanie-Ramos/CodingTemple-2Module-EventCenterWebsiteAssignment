@@ -201,7 +201,7 @@ button:focus {
 
 
 
-.two-column {
+/* .two-column {
   display: grid;
   grid-template-columns: 1.5fr 1fr;
   gap: 1.2rem;
@@ -219,9 +219,9 @@ table {
   border-collapse: collapse;
   background-color: #fff;
   border: 1px solid var(--border-color);
-}
+} */
 
-caption {
+/* caption {
   font-weight: 700;
   color: var(--primary-color);
   margin-bottom: 0.6rem;
@@ -257,9 +257,9 @@ th {
 .gallery-grid img:focus {
   transform: scale(1.02);
   filter: saturate(1.15);
-}
+} */
 
-.contact-form {
+/* .contact-form {
   display: grid;
   gap: 0.7rem;
   max-width: 700px;
@@ -281,7 +281,7 @@ th {
 
 #contact {
   border-top: 4px solid var(--accent-color);
-}
+} */
 
 /* Footer Section */
 /* ? How to fix the footer at the bottom when resizing it */
@@ -298,16 +298,16 @@ footer {
 
 /* Media Queries */
 /* Tablet Device */
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
   .project-grid {
     background-color: rgba(126, 192, 126, 0.562);
   }
 
-}
+} */
 
 /* Mobile Device */
-@media screen and (max-width: 576px) {
+/* @media screen and (max-width: 576px) {
   .project-grid {
     background-color: rgb(166, 194, 222);
   }
-}
+} */

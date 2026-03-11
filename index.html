@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -9,6 +9,7 @@
     />
     <meta name="author" content="Stephanie Ramos" />
     <title>Event Center Website</title>
+    <!-- Bonus: Favicon -->
     <link
       rel="icon"
       type="image/svg"
@@ -17,7 +18,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
 
-  <body>
+  <body id="top">
     <!-- Requirement: <header> tag -->
     <header>
       <a href="index.html" class="logo">The Breakers</a>
@@ -36,7 +37,7 @@
     <!-- Requirement: <main> tag -->
     <main>
       <!-- Requirement: Introduction to Events/Banner Section -->
-      <section class="banner">
+      <section id="top" class="banner">
         <!-- Requirement: Headings -->
         <h1>Where Wedding Celebrations Become Stories</h1>
         <!-- Requirement: Paragraphs -->
@@ -69,59 +70,58 @@
         <!-- Event Showcase -->
       <section class="card-grid">
         <!-- Requirement: <artcile> tag -->
-          <article class="event-card">
-            <!-- Requirement: jpg image with alt text -->
-            <img
-              src="https://storage.googleapis.com/wwwstatic.thebreakers.com/filer_public_thumbnails/filer_public/9e/72/9e72fed8-1506-4f79-9fde-ae0626433b2e/01_oceanlawn_alain_martinez.jpg__1024x1024_q85_subsampling-2.jpg"
-              alt="Wedding reception dinner setup in a ballroom"
-            />
-            <h3>Ocean Lawn</h3>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam
-              facilis debitis tenetur? Eius dicta incidunt, ea numquam
-              accusantium quia ipsam.
-            </p>
-          </article>
-          <article class="event-card">
-            <!-- Requirement: png image with alt text -->
-            <img
-              src="/AssignmentEventCenter/img/theCircleBallroom.png"
-              alt="The Circle Ballroom"
-            />
-            <h3>The Circle Ballroom</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab minima
-              earum molestiae quia ratione obcaecati aliquam laudantium sunt a
-              eveniet.
-            </p>
-          </article>
-          <article class="event-card">
-            <!-- Requirement: gif image with alt text -->
-            <img
-              src="/AssignmentEventCenter/img/magnoliaRoom.gif"
-              alt="The Circle Ballroom"
-            />
-            <h3>Magnolia Room</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab minima
-              earum molestiae quia ratione obcaecati aliquam laudantium sunt a
-              eveniet.
-            </p>
-          </article>
-          <article class="event-card">
-            <!-- Requirement: External Link -->
-            <img
-              src="https://storage.googleapis.com/wwwstatic.thebreakers.com/filer_public_thumbnails/filer_public/59/d5/59d55fa1-8884-4633-98ae-4e3a63d5b0bc/front_lawn_jonathan_connolly_01.png__1024x1024_q85_subsampling-2.jpg"
-              alt="Forest Lawn"
-            />
-            <h3>Front Lawn</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga
-              modi possimus quasi? Omnis, soluta quaerat nihil quas neque
-              laudantium voluptatibus.
-            </p>
-          </article>
-        </div>
+        <article class="event-card">
+          <!-- Requirement: jpg image with alt text -->
+          <img
+            src="https://storage.googleapis.com/wwwstatic.thebreakers.com/filer_public_thumbnails/filer_public/9e/72/9e72fed8-1506-4f79-9fde-ae0626433b2e/01_oceanlawn_alain_martinez.jpg__1024x1024_q85_subsampling-2.jpg"
+            alt="Wedding reception dinner setup in a ballroom"
+          />
+          <h3>Ocean Lawn</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam
+            facilis debitis tenetur? Eius dicta incidunt, ea numquam
+            accusantium quia ipsam.
+          </p>
+        </article>
+        <article class="event-card">
+          <!-- Requirement: png image with alt text -->
+          <img
+            src="/AssignmentEventCenter/img/theCircleBallroom.png"
+            alt="The Circle Ballroom"
+          />
+          <h3>The Circle Ballroom</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab minima
+            earum molestiae quia ratione obcaecati aliquam laudantium sunt a
+            eveniet.
+          </p>
+        </article>
+        <article class="event-card">
+          <!-- Requirement: gif image with alt text -->
+          <img
+            src="/AssignmentEventCenter/img/magnoliaRoom.gif"
+            alt="The Circle Ballroom"
+          />
+          <h3>Magnolia Room</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab minima
+            earum molestiae quia ratione obcaecati aliquam laudantium sunt a
+            eveniet.
+          </p>
+        </article>
+        <article class="event-card">
+          <!-- Requirement: External Link -->
+          <img
+            src="https://storage.googleapis.com/wwwstatic.thebreakers.com/filer_public_thumbnails/filer_public/59/d5/59d55fa1-8884-4633-98ae-4e3a63d5b0bc/front_lawn_jonathan_connolly_01.png__1024x1024_q85_subsampling-2.jpg"
+            alt="Forest Lawn"
+          />
+          <h3>Front Lawn</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga
+            modi possimus quasi? Omnis, soluta quaerat nihil quas neque
+            laudantium voluptatibus.
+          </p>
+        </article>
       </section>
 
       <section class="why">
@@ -137,15 +137,15 @@
           </ul>
       </section>
 
-      <!-- Bonus: Back to Top -->
+      <!-- Bonus: Back to Top Button -->
       <section>
-         <p><a href="#top">Back to top</a></p>
+        <a class="button" href="#top">Back to top</a>
       </section>
     </main>
     <!-- Requirement: <footer> tag -->
     <footer>
+      <!-- Requirement: Copyright Information -->
       <p>&copy; 2026 The Breakers</p>
-      <!--Copyright Information-->
     </footer>
   </body>
 </html>

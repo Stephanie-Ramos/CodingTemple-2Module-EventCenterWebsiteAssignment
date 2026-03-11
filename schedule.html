@@ -16,7 +16,8 @@
     />
     <link rel="stylesheet" href="style.css" />
   </head>
- <body>
+
+  <body id="top">
     <header>
       <a href="index.html" class="logo">The Breakers</a>
       <nav class="navbar">
@@ -28,89 +29,98 @@
       </nav>
     </header>
 
-  <main>
-    <section class="page-banner">
- <!-- Booking Process -->
+    <main>
+      <section class="page-banner">
+        <!-- Booking Process -->
         <h2>Booking Process</h2>
-          <p>Choose your event date and venue layout. Meet with our planning team to customize your package. Confirm guest details and event timeline.
-          </p>
-     
-    </section>
-    <section class="container">
-      <h2>Event Schedule</h2>
-      <!-- Requirement: A Table -->
-      <table>
-        <caption>Spring 2026 Event Calendar</caption>
-        <thead>
-          <tr>
-            <th scope="col">Date</th>
-            <th scope="col">Event</th>
-            <th scope="col">Category</th>
-            <th scope="col">Start Time</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>March 21, 2026</td>
-            <td>City Jazz Gala</td>
-            <td>Concert</td>
-            <td>7:00 PM</td>
-          </tr>
-          <tr>
-            <td>April 4, 2026</td>
-            <td>Women in Leadership Forum</td>
-            <td>Conference</td>
-            <td>10:00 AM</td>
-          </tr>
-          <tr>
-            <td>April 18, 2026</td>
-            <td>Spring Wedding Open House</td>
-            <td>Showcase</td>
-            <td>1:00 PM</td>
-          </tr>
-          <tr>
-            <td>May 9, 2026</td>
-            <td>Heritage Night Festival</td>
-            <td>Community</td>
-            <td>5:00 PM</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
+        <!-- Requirement: Anchor Link -->
+        <p>
+          Choose your event date and venue layout.
+          <a href="#contact">Submit a contact or booking inquiry.</a> Meet with
+          our planning team to customize your package. Confirm guest details and
+          event timeline.
+        </p>
+      </section>
+      <section class="container">
+        <h2>Event Schedule</h2>
+        <!-- Requirement: A Table -->
+        <table>
+          <caption>
+            Spring 2026 Event Calendar
+          </caption>
+          <thead>
+            <tr>
+              <th scope="col">Date</th>
+              <th scope="col">Event</th>
+              <th scope="col">Category</th>
+              <th scope="col">Start Time</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>March 21, 2026</td>
+              <td>City Jazz Gala</td>
+              <td>Concert</td>
+              <td>7:00 PM</td>
+            </tr>
+            <tr>
+              <td>April 4, 2026</td>
+              <td>Women in Leadership Forum</td>
+              <td>Conference</td>
+              <td>10:00 AM</td>
+            </tr>
+            <tr>
+              <td>April 18, 2026</td>
+              <td>Spring Wedding Open House</td>
+              <td>Showcase</td>
+              <td>1:00 PM</td>
+            </tr>
+            <tr>
+              <td>May 9, 2026</td>
+              <td>Heritage Night Festival</td>
+              <td>Community</td>
+              <td>5:00 PM</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
 
-    <section class="container">
-      <h2>Ticket Pricing</h2>
-      <table>
-        <caption>General Ticket Tiers</caption>
-        <thead>
-          <tr>
-            <th scope="col">Tier</th>
-            <th scope="col">Benefits</th>
-            <th scope="col">Price</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>General Admission</td>
-            <td>Main floor seating</td>
-            <td>$45</td>
-          </tr>
-          <tr>
-            <td>Premium</td>
-            <td>Front section seating and lounge access</td>
-            <td>$95</td>
-          </tr>
-          <tr>
-            <td>VIP</td>
-            <td>Priority entry, dining package, premium views</td>
-            <td>$160</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
+      <section class="container">
+        <h2>Ticket Pricing</h2>
+        <table>
+          <caption>
+            General Ticket Tiers
+          </caption>
+          <thead>
+            <tr>
+              <th scope="col">Tier</th>
+              <th scope="col">Benefits</th>
+              <th scope="col">Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>General Admission</td>
+              <td>Main floor seating</td>
+              <td>$45</td>
+            </tr>
+            <tr>
+              <td>Premium</td>
+              <td>Front section seating and lounge access</td>
+              <td>$95</td>
+            </tr>
+            <tr>
+              <td>VIP</td>
+              <td>Priority entry, dining package, premium views</td>
+              <td>$160</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
 
-          <!-- Contact and Booking Form  -->
-    <section id="contact" class="container">
+      <!-- Contact and Booking Form  -->
+      <!-- Requirement: Class and ID selector-->
+      <section id="contact" class="container">
         <h2>Contact & Booking Inquiry</h2>
         <!-- Requirement: Contact Form -->
         <form class="contact-form" action="#" method="post">
@@ -133,12 +143,14 @@
           <!-- Requirement: Submit Button -->
           <button type="submit">Submit Inquiry</button>
         </form>
+      </section>
+      <section>
+        <a class="button" href="#top">Back to top</a>
+      </section>
+    </main>
 
-
-  </main>
-<!-- Requirement: Footer wiht Copyright Information -->
-  <footer>
-    <p>&copy; 2026 The Breakers</p>
-  </footer>
-</body>
+    <footer>
+      <p>&copy; 2026 The Breakers</p>
+    </footer>
+  </body>
 </html>
