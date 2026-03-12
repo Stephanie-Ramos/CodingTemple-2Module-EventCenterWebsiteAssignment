@@ -1,11 +1,11 @@
 # Event Center Website – The Breakers
 
 
-![Homepage Screenshot](/AssignmentEventCenter/img/Screenshot%202026-03-12%20at%205.58.40 AM.png)
+![Homepage Screenshot](/AssignmentEventCenter/img/websitePreview.png)
 
 
 ## Project Description
-This project is a multi-page website for an event center called **The Breakers**. It showcases event spaces, allows users to check availability, and provides a contact form for booking inquiries.
+This project is a multi-page website for an event center called **The Breakers**. It showcases wedding event spaces, allows users to check availability, and provides a contact form for booking inquiries.
 
 
 ## Features
