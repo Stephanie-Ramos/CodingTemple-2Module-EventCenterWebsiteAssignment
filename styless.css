@@ -76,9 +76,8 @@ header {
 }
 
 /* ??? This is not working */
-.navlinks:hover a:visited {
-  /* color:#124558;  */
-  color:red;
+.navlinks:hover {
+  color:#124558; 
 }
 
 /* Banners */
