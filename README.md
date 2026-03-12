@@ -1,13 +1,41 @@
+# Event Center Website – The Breakers
 
 
-#Concepts on the properties for the flex container and flex items
+![Homepage Screenshot](/AssignmentEventCenter/img/Screenshot%202026-03-12%20at%205.58.40 AM.png)
+
+
+## Project Description
+This project is a multi-page website for an event center called **The Breakers**. It showcases event spaces, allows users to check availability, and provides a contact form for booking inquiries.
+
+
+## Features
+- Fixed navigation bar
+- Event showcase cards with images
+- Event availability calendar
+- Contact & booking inquiry form
+- Responsive layout for mobile and tablet
+- Hover animations and interactive UI elements
+
+## Technologies Used
+
+- HTML5
+- CSS3
+- Google Fonts (Poppins, Playfair Display)
+
+## How to Run the Project
+
+1. Download or clone the repository.
+2. Ensure all files remain in the same folder structure.
+3. Open **index.html** in a web browser.
+
+## Educational Materials 
+
+### Concepts on the properties for the flex container and flex items: 
 https://codepen.io/enxaneta/pen/adLPwv 
 
 
-
-#Flex:1 Declaration
-Not exactly — but flex: 1 includes flex-grow: 1.
-
+### Flex:1; Declaration
+```
 In Flexbox, flex is a shorthand property that sets three properties at once:
 
 flex: <flex-grow> <flex-shrink> <flex-basis>
@@ -23,9 +51,7 @@ flex-basis: 0%;
 So the element:
 
 grows to fill available space (flex-grow:1)
-
 can shrink if needed (flex-shrink:1)
-
 starts with a base size of 0 (flex-basis:0%)
 
 When you write
@@ -36,14 +62,6 @@ You are only allowing the element to grow, but the other properties stay at thei
 flex-grow: 1
 flex-shrink: 1
 flex-basis: auto
-
-The important difference is:
-
-Property	flex:1	flex-grow:1
-flex-grow	1	1
-flex-shrink	1	1
-flex-basis	0%	auto
-Why flex:1 is commonly used for sticky footers
 
 In your layout:
 
@@ -58,20 +76,6 @@ main {
 }
 
 main expands to fill all remaining space, pushing the footer to the bottom of the page when content is short.
-
-If you only used:
-
-flex-grow:1;
-
-the layout might not stretch the same way because flex-basis remains auto.
-
-✅ Best practice for page layouts (like your site):
-
-main {
-  flex:1;
-}
-
-If you want, I can also show you a cleaner modern layout pattern for headers + sticky footer + responsive sections that professors often like to see in web design assignments.
-
-
+```
+### Display: Grid; Declaration
 https://www.w3schools.com/css/tryit.asp?filename=trycss_display2
