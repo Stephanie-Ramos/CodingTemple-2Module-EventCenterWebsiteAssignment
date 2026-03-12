@@ -1,7 +1,7 @@
 # Event Center Website – The Breakers
 
 
-![Homepage Screenshot](/AssignmentEventCenter/img/websitePreview.png)
+![Homepage Screenshot](/img/websitePreview.png)
 
 
 ## Project Description
