@@ -308,6 +308,33 @@ header {
   border: 1px solid black;
 }
 
+/* Venue Pricing Table */
+.pricing-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1.5rem;
+  background: white;
+}
+
+.pricing-table th,
+.pricing-table td {
+  padding: 1rem;
+  border: 1px solid #e5e7eb;
+  text-align: left;
+}
+
+.pricing-table th {
+  background: #124559;
+  color: white;
+}
+
+.pricing-table tbody tr:nth-child(even) {
+  background: #f1f5f9;
+}
+
+.pricing-table tbody tr:hover {
+  background: #e9f5f9;
+}
 
 /* SCHEDULE: Contact Form */
 .contact-form {
