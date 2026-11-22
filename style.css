@@ -63,6 +63,21 @@ header {
   color: #124559;
 }
 
+/* Accessibility: Skip Navigation */
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 1rem;
+  background: #124559;
+  color: white;
+  padding: 0.8rem;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  top: 1rem;
+}
+
 /* Navigation Bar */
 .navbar ul {
   display: flex;
