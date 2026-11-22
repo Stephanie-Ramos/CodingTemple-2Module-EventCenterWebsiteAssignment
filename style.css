@@ -370,6 +370,13 @@ header {
   outline: 2px solid #8ab0dd; /* keyboard navigation focus */
 }
 
+/* Accessibility: Keyboard Focus */
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid #124559;
+  outline-offset: 4px;
+}
+
 /* Footer */
 footer {
   text-align: center;
